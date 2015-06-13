@@ -1,0 +1,34 @@
+<div data-ng-controller="LoginCtrl">
+
+    <div class="alert alert-danger animated fadeIn" ng-show="loginerror">{{loginerror}}</div>
+    
+    <div class="text-center">
+      <img src="/theme/assets/img/logo.png" alt="#">
+    </div>
+    <h2>Đăng nhập</h2>
+
+    <form id="login_form" ng-submit="login()">
+        <div class="input-wrapper">
+            <input required id="email_block" type="email" name="email" placeholder="Đia chỉ email" ng-model="user.email">
+            <div class="error_message">Vui lòng nhập đúng thông tin #</div>
+            <span class="pic email"></span>
+        </div>
+        <div class="input-wrapper">
+            <input required id="password_block" name="password" type="{{input.type}}" placeholder="{{input.placeholder}}" ng-model="user.password">
+            <div class="error_message">Vui lòng nhập đúng thông tin #</div>
+                <span class="pic password {{input.iconClass}}" ng-click = "togglePasswordVisible()">
+                      <div class="hide_text_password">
+                          {{input.tooltipText}}
+                      </div>
+                </span>
+        </div>
+        <div class="forgot_password">
+            <a ui-sref='forgot-password'>Quên mật khẩu?</a>
+        </div>
+        <div class="button_login">
+            <button type="submit" class="submit_button">Ok</button>
+            <p>Bạn chưa có tài khoản?</p>
+            <a ui-sref='auth.register' >Đăng kí</a>
+        </div>
+    </form>
+</div>

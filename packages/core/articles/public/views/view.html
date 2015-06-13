@@ -1,0 +1,24 @@
+<section data-ng-controller="ArticlesController" data-ng-init="findOne()">
+
+  <div id="watch-header" class="yt-card yt-card-has-padding">
+      <h1 class="yt watch-title-container">
+        <span class="watch-title ">{{article.title}}</span><span data-ng-if="hasAuthorization(article)">
+          <a class="btn" href="/#!/articles/{{article._id}}/edit">
+            <i class="glyphicon glyphicon-edit"></i>
+          </a>
+          <a class="btn" data-ng-click="remove(article);">
+            <i class="glyphicon glyphicon-trash"></i>
+          </a>
+        </span>
+      </h1>
+      <small class="watch-title "style="margin-left: 10px;">{{article.created | date:'medium'}}</small> /
+      <span class="watch-title ">{{article.user.name}}</span>
+  <div class="video-noidung"><p ng-bind-html="article.content | trustAsHtml"></p></div>
+  </div>
+
+  <div id="watch-header" class="yt-card yt-card-has-padding">
+    <div ng-if="article !== undefined" ng-include="'comments/views/index.html'" data-ng-controller="CommentsController" data-ng-init="findComments(article, 2)"/>
+  </div>
+
+
+</section>

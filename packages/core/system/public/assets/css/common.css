@@ -1,0 +1,59 @@
+body{
+    background: #EFEFEF url("/system/assets/img/bg_body.jpg") repeat scroll 0px 0px;
+}
+.page-header {
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    border-bottom: 0 !important;
+}
+.page-header .navbar-nav {
+    float: right;
+}
+.page-header > div > div, .page-header > div > ul {
+    display: inline-block;
+}
+.text-edit {
+    padding: 13px 0 0 0;
+}
+.account {
+    text-align:right;
+}
+.account > div, .account > ul {
+    text-align: left;
+}
+.navbar .nav > li > a.brand {
+    padding-left: 20px;
+    margin-left: 0
+}
+.content {
+    margin-top: 55px;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    background: #EFEFEF url("/system/assets/img/bg.jpg") repeat scroll 0px 0px;
+}
+footer {
+	position: fixed;
+    bottom: 0;
+	height: 50px;
+	width: 100%;
+}
+#footer {position: relative;background: url('../img/bg.png') repeat-x;color:#ffffff;font-size:12px;font-family:Verdana, Arial, sans-serif}
+#footer a{color:#7FFF00;text-decoration:underline}
+#footer a:hover{color:#FF0000;text-decoration:underline}
+#footer a:visited{color:#DA70D6;text-decoration:underline}
+#footer p{margin:0 0 8px 0}
+#footer p.axe img{margin-bottom:-7px}
+#foot {width:80%;margin:0 auto;height:100px;line-height:1.1em;padding:0 10px 0 10px}
+#foot #left {width:50%;float:left;padding-top:8px}
+#foot #right {width:30%;float:right;text-align:right;padding-top:8px}
+
+.featuredpic img{
+  width:510px;
+}
+/*.ng-invalid.ng-dirty{*/
+    /*border-color:#FA787E;*/
+/*}*/
+/*.ng-valid.ng-dirty{*/
+    /*border-color:#78FA89;*/
+/*}*/

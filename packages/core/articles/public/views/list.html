@@ -1,0 +1,28 @@
+<section data-ng-controller="ArticlesController" data-ng-init="find()">
+  <ul class="articles unstyled">
+            <input ng-model="q" id="search" class="form-control" placeholder="Nhập từ khóa cần tìm">
+            <!--<input type="number" min="1" max="10" class="form-control" ng-model="pageSize">-->
+              <div class="category" >
+                <li class="category li" dir-paginate="article in articles | filter:q | itemsPerPage: pageSize" current-page="currentPage">
+                  <h3>
+                    <a data-ng-href="#!/articles/{{article._id}}">{{article.title}}</a>
+                    <span data-ng-if="hasAuthorization(article)">
+                      <a class="btn" href="/#!/articles/{{article._id}}/edit">
+                        <i class="glyphicon glyphicon-edit"></i>
+                      </a>
+                      <a class="btn" data-ng-click="remove(article);">
+                        <i class="glyphicon glyphicon-trash"></i>
+                      </a>
+                    </span>
+                  </h3>
+                  <span>{{article.created | date:'medium'}}</span> /
+                  <span>{{article.user.name}}</span>
+                  <hr>   
+                </li>
+              </div>
+          <div class="text-center">
+            <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="/videos/assets/dirPagination.tpl.html"></dir-pagination-controls>
+          </div>
+  </ul>
+  <h1 data-ng-hide="!articles || articles.length"><center>Chưa có bài viết. <br> Tại sao bạn không <a href="/#!/articles/create">Viết Bài</a>?</center></h1>
+</section>

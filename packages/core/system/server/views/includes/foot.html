@@ -1,0 +1,24 @@
+{% for file in aggregatedassets.footer.js %}
+  <script type="text/javascript" src="{{file}}"></script>
+{% endfor %}
+<footer>
+<div id="footer">
+	<div id="foot">
+		<div id="left">
+			<p>Khoa công nghệ thông tin trường Đại học Phạm Văn Đồng</p>
+			<p>+ 99 Hùng Vương - TP Quảng Ngãi</p>
+		</div>
+		<div id="right">
+			<p class="axe">&copy; Copyright 2015</p>
+			<p class="axe">Design & Develop by <a href="https://www.facebook.com/My.Name.Is.Kakalot">Mr.Quang Bão</a></p>
+		</div>
+	</div>
+</div>
+</footer>
+{% if (process.env.NODE_ENV == 'development') %}
+  <!-- Livereload script rendered -->
+  <!-- Disabling livereload due to - https://github.com/linnovate/mean/issues/929
+       Will probably return in 0.4.2 and new aggregation
+  <script type="text/javascript" src="{{'//' + req.hostname + ':35729/livereload.js'}}"></script>
+  -->
+{% endif %}

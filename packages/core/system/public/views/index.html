@@ -1,0 +1,80 @@
+<section class="welcome container-fluid" data-ng-controller="IndexController">
+  <div class="col-md-12 first">
+    <span data-ng-if="dangnhap(system)">Chào mừng bạn đến với pduCoder. Để tiếp tục sử dụng bạn hãy chọn các chức năng trên thanh menu bao gồm <font color='blue'>Bài viết</font>, <font color='blue'>Video bài giảng</font>, <font color='blue'>Phòng chát</font>, <font color='blue'>Hội thảo</font></br></span>
+    <span data-ng-if="!dangnhap(system)">Chào mừng bạn đến với pduCoder. Để tiếp tục sử dụng bạn cần phải <a href="http://localhost:3000/#!/auth/register"><font color='green'>Đăng kí</font></a> hoặc <a href="http://localhost:3000/#!/auth/login"><font color='red'>Đăng nhập</font></a> để tiếp tục</br></span>
+    </div>
+    <div class="col-md-12 row">
+    <div class="info col-md-6">
+      <div class="packages">
+        <div class="welcome-sprite"></div>
+        <h3>CÁC GÓI ỨNG DỤNG</h3>
+        <div class="package">
+          <h4><a href="http://localhost:3000/#!/videos">Video</a></h4>
+          <p>Dành cho "giảng viên" đăng tải các video/clip bài giảng của mình phục vụ cho việc học tập.</p>
+        </div>
+        <div class="package">
+          <h4><a href="http://localhost:3000/#!/articles">Bài viết</a></h4>
+          <p>Như mọi bài viết thông thường ở mọi nơi khác, mọi thành viên đều có thể đăng bài.</p>
+        </div>
+        <div class="package">
+        <h4><a href="#">Phòng chát</a></h4>
+          <p>Tham gia tán gẫu, trò chuyện, làm quen giữa các thành viên với nhau.</p>
+        </div>
+        <div class="package">
+          <h4><a href="#">Bình luận</a></h4>
+          <p>Bình luận các chủ đề, bài viết, video với thời gian thực</p>
+        </div>
+      </div>
+<!--
+      <div class="community">
+        <div class="welcome-sprite"></div>
+        <h3>Join our community</h3>
+          <i class="socialsprite sprite-facebook"></i>
+          <div class="package">
+            <h4><a href="https://www.facebook.com/groups/mean.io/">Facebook group</a></h4>
+            <p>Informal support, news and just hanging out</p>
+          </div>
+            <i class="socialsprite sprite-irc"></i>
+          <div class="package">
+            <h4><a href="https://gitter.im/linnovate/mean">Gitter</a></h4>
+            <p>Support and Technical discussions</a></p>
+          </div>
+        <i class="socialsprite sprite-github"></i>
+        <div class="package">
+          <h4><a href="http://github.com/linnovate/mean">Github</a></h4>
+          <p>Issues, Support, Code discussions and PRs</p>
+        </div>
+        <i class="socialsprite sprite-stackoverflow"></i>
+        <div class="package">
+          <h4><a href="http://hangout.mean.io">Hangout</a></h4>
+          <p>Video support, shared coding and to meet the people behind mean.io</p>
+        </div>
+      </div>
+-->
+    </div>
+    <div class="featured col-md-6">
+      <div class="featured-sites">
+        <!--<h2>Get Inspired</h2>--><br>
+        <div class="featuredpic">
+          <img ng-src="{{sites.pducoder.image}}"/>
+        </div>
+        <h4>{{sites.pducoder.name}} <span>by
+          <a href="{{sites.pducoder.link}}">{{sites.pducoder.author}}</a></span></h4>
+          <p>{{sites.pducoder.text}}</p>
+      </div>
+<!--
+      <div class="featured-packages">
+        <h2>Featured Package</h2>
+        <div class="featuredpic">
+          <img ng-src="{{packages.gmap.image}}"/>
+        </div>
+        <h4>{{packages.gmap.name}} <span>by
+          <a href="{{sites.makeapoint.link}}">{{packages.gmap.author}}</a></span></h4>
+          <p>{{packages.gmap.text}}</p>
+        <span class="morelink"><a href="http://builtwith.mean.io">All Packages</a></span>
+      </div>
+    </div>
+-->
+  </div>
+  </div>
+</section>
