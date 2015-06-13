@@ -1,0 +1,30 @@
+<section data-ng-controller="VideosController" data-ng-init="find()">
+  <ul class="category-item unread">
+          
+            <input ng-model="q" id="search" class="form-control" placeholder="Nhập từ khóa cần tìm">
+            <!--<input type="number" min="1" max="10" class="form-control" ng-model="pageSize">-->
+              <div class="category" >
+                <li class="category li" dir-paginate="video in videos | filter:q | itemsPerPage: pageSize" current-page="currentPage">
+                  <h3>
+                    <a data-ng-href="#!/videos/{{video._id}}">{{video.title}}</a>
+                    <span data-ng-if="hasAuthorization(video)">
+                      <a class="btn" href="/#!/videos/{{video._id}}/edit">
+                        <i class="glyphicon glyphicon-edit"></i>
+                      </a>
+                      <a class="btn" data-ng-click="remove(video);">
+                        <i class="glyphicon glyphicon-trash"></i>
+                      </a>
+                    </span>
+                  </h3>
+                  <span>{{video.created | date:'medium'}}</span> /
+                  <span>{{video.user.name}}</span>
+                  <hr>
+                </li>
+              </div>
+
+          <div class="text-center">
+            <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="/videos/assets/dirPagination.tpl.html"></dir-pagination-controls>
+          </div>
+  </ul>
+  <h1 data-ng-hide="!videos || videos.length"><center>Chưa có video. <br> Tại sao bạn không <a href="/#!/videos/create">Gửi Video</a>?</center></h1>
+</section>

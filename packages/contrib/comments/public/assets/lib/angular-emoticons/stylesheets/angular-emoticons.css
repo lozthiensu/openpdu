@@ -1,0 +1,559 @@
+/*!
+ * Angular Smilies 1.1.0
+ * Copyright 2014 Damien "Mistic" Sorel (http://www.strangeplanet.fr)
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ */
+.css-emoticon.biggrin{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:0 0
+}
+
+.css-emoticon.confused{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-18px 0
+}
+
+.css-emoticon.cool{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-36px 0
+}
+
+.css-emoticon.cry{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-54px 0
+}
+
+.css-emoticon.eek{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-72px 0
+}
+
+.css-emoticon.evil{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-90px 0
+}
+
+.css-emoticon.like{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-108px 0
+}
+
+.css-emoticon.lol{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-126px 0
+}
+
+.css-emoticon.love{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-144px 0
+}
+
+.css-emoticon.mad{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-162px 0
+}
+
+.css-emoticon.mrgreen{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-180px 0
+}
+
+.css-emoticon.neutral{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-198px 0
+}
+
+.css-emoticon.question{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-216px 0
+}
+
+.css-emoticon.razz{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-234px 0
+}
+
+.css-emoticon.redface{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-252px 0
+}
+
+.css-emoticon.rolleyes{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-270px 0
+}
+
+.css-emoticon.sad{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-288px 0
+}
+
+.css-emoticon.smile{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-306px 0
+}
+
+.css-emoticon.surprised{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-324px 0
+}
+
+.css-emoticon.thumbdown{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-342px 0
+}
+
+.css-emoticon.thumbup{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-360px 0
+}
+
+.css-emoticon.twisted{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-378px 0
+}
+
+.css-emoticon.wink{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-396px 0
+}
+
+.css-emoticon.smile{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-306px 0
+}
+
+.css-emoticon.surprised{
+  background: url('../images/smilies.png');
+  background-position:-324px 0
+}
+
+.css-emoticon.thumbdown{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');background-position:-342px 0
+}
+
+.css-emoticon.thumbup{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-360px 0
+}
+
+.css-emoticon.twisted{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-378px 0
+}
+
+.css-emoticon.wink{
+  font-size: 0px;
+  display:inline-block;
+  height:18px;
+  width: 18px;
+  vertical-align:middle;
+  background: url('../images/smilies.png');
+  background-position:-396px 0
+}
+
+.css-emoticon.tho1{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -20px -20px ;
+}
+.css-emoticon.tho2{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -20px ;
+}
+.css-emoticon.tho3{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -20px ;
+}
+.css-emoticon.tho4{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -20px -220px;
+}
+.css-emoticon.tho5{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -220px ;
+}
+.css-emoticon.tho6{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -220px ;
+}
+.css-emoticon.tho7{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -20px -420px;
+}
+.css-emoticon.tho8{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -420px ;
+}
+.css-emoticon.tho9{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -420px ;
+}
+.css-emoticon.tho10{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -0px -620px ;
+}
+.css-emoticon.tho11{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -620px ;
+}
+.css-emoticon.tho12{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -620px ;
+}
+.css-emoticon.tho13{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -20px -820px;
+}
+.css-emoticon.tho14{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -820px ;
+}
+.css-emoticon.tho15{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -820px ;
+}
+.css-emoticon.tho16{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -20px -1020px;
+}
+.css-emoticon.tho17{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -1020px ;
+}
+.css-emoticon.tho18{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -1020px ;
+}
+.css-emoticon.tho19{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -20px -1220px ;
+}
+.css-emoticon.tho20{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -1220px ;
+}
+.css-emoticon.tho21{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -1220px ;
+}
+.css-emoticon.tho22{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -20px -1420px;
+}
+.css-emoticon.tho23{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -1420px ;
+}
+.css-emoticon.tho24{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -1420px ;
+}
+.css-emoticon.tho25{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -20px -1620px;
+}
+.css-emoticon.tho26{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -1620px ;
+}
+.css-emoticon.tho27{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -1620px ;
+}
+.css-emoticon.tho28{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -20px -1820px;
+}
+.css-emoticon.tho29{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -220px -1820px ;
+}
+.css-emoticon.tho30{
+  font-size: 0px;
+  display:inline-block;
+  height:160px;
+  width: 160px;
+  vertical-align:middle;
+  background: url('../images/sprites.gif');
+  background-position: -420px -1820px ;
+}

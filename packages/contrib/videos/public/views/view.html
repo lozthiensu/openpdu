@@ -1,0 +1,40 @@
+<section data-ng-controller="VideosController" data-ng-init="findOne()">
+  <div class="videowrapper" data-ng-if="Youtube(video)">
+      <iframe width="560" height="315" src="{{ video.url | trustAsResourceUrl }}" frameborder="0" style="border: 1px solid lightgray;padding:15px 15px 15px 15px;background:#cbcbcb;border-radius:15px;-moz-box-shadow:3px 3px 3px black;-webkit-box-shadow:3px 3px 3px black;box-shadow:3px 3px 3px black;" allowfullscreen="allowfullscreen"></iframe>
+  </div>
+
+  <div data-ng-if="!Youtube(video)">
+    <video class="video-js vjs-default-skin"
+      controls preload="auto">
+     <source src="{{ video.url | trustAsResourceUrl }}" type='video/mp4' />
+     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+    </video>
+  </div>
+  <br>
+
+
+
+  <div id="watch-header" class="yt-card yt-card-has-padding">
+      <h1 class="yt watch-title-container">
+        <span class="watch-title ">{{video.title}}</span><span data-ng-if="hasAuthorization(video)">
+        <a class="btn" href="/#!/videos/{{video._id}}/edit">
+          <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn" data-ng-click="remove(video);">
+          <i class="glyphicon glyphicon-trash"></i>
+        </a>
+      </span>
+      </h1>
+      <small class="watch-title "style="margin-left: 10px;">{{video.created | date:'medium'}}</small> /
+      <span class="watch-title ">{{video.user.name}}</span>
+  <div class="video-noidung"><p ng-bind-html="video.content | trustAsHtml"></p></div>
+  <div data-ng-show="reqFile(video)" class="text-center"><br>
+    Trước khi nộp file cần đổi tên theo định dạng: &lt;Họ và tên&gt;_&lt;Lớp&gt;.&lt;Đuôi mở rộng&gt; và click vào link sau:    <a class ="btn btn-info" target='_blank' href='#!/upload'>Upload</a>
+  </div>
+  </div>
+
+  <div id="watch-header" class="yt-card yt-card-has-padding">
+    <div ng-if="video !== undefined" ng-include="'comments/views/index.html'" data-ng-controller="CommentsController" data-ng-init="findComments(video, 2)"/>
+    </div>
+  </div>
+</section>
